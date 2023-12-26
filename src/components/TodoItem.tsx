@@ -1,8 +1,8 @@
 import { useState } from "react";
 import '../App.css';
 
-function TodoItem({ todo, update }) {
- 
+function TodoItem(props: any) {
+  const { todo, update } = props
   // Our component uses the "edit" state
   // variable to switch between editing
   // and viewing the todo item
@@ -40,7 +40,7 @@ function TodoItem({ todo, update }) {
   // is rendered in this component.
   // This function is called when the
   // form to delete a todo is submitted
-  function deleteTodo(e) {
+  function deleteTodo(e: any) {
     e.preventDefault();
     let pos = todo.id;
  

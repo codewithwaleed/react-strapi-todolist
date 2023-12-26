@@ -74,7 +74,7 @@ function App() {
 
         {/* This is a list view of all the todos in the "todo" state variable */}
         <div>
-          {todos.map((todo) => {
+          {todos.map((todo: any) => {
             return <TodoItem todo={todo} key={todo.id} update={update} />;
           })}
         </div>
