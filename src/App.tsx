@@ -6,6 +6,11 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [newTodo, setNewTodo] = useState("");
 
+  console.log(import.meta.env, 'import.meta.env');
+  console.log(import.meta.env.PROD, 'import.meta.env.PROD')
+  console.log(import.meta.env.VITE_REACT_APP_BACKEND, 'import.meta.env.VITE_REACT_APP_BACKEND')
+
+
   console.log(
     `${import.meta.env.VITE_REACT_APP_BACKEND}api/todos`,
     "backend url"
